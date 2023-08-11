@@ -1,6 +1,6 @@
 import { IconButton, Typography, Divider, Drawer } from "@mui/material";
 import { styled } from "@mui/material/styles";
-import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
+import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import { useSelector } from "react-redux";
 import { RootState } from "app/store";
 import { useDispatch } from "react-redux";
@@ -43,10 +43,10 @@ const SidebarDrawer = () => {
                     component="div"
                     sx={{ marginRight: "auto", marginLeft: "10px" }}
                 >
-                   SETTINGS
+                    SETTINGS
                 </Typography>
                 <IconButton onClick={() => dispatch(closeDrawer())}>
-                    <ChevronLeftIcon />
+                    <ChevronRightIcon />
                 </IconButton>
             </DrawerHeader>
             <Divider />
